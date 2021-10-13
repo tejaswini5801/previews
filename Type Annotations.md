@@ -85,8 +85,8 @@ Declaration annotations target fields, whereas type annotations target types.
 
 ## Output
 ```
-Annotated with a Type annotation
-Function's return type is annotated
+Annotating the type of the string
+Annotating the function's return type
 ```
 
 The Java SE 8 version does not provide a type check framework, but it allows us to write custom annotations for the type check. Type-checking frameworks comprises of type annotation definitions and pluggable modules that may be used for annotation processing. 
