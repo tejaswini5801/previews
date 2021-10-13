@@ -34,7 +34,7 @@ Type Annotations can be applied to any type use. It ensures stronger type checki
 ```
 <br />
 
-The definition of declartion and type annotations is very similar, the key differentiator is in the `@Target` specification, which indicates 
+The definition of declaration and type annotations is very similar, the key differentiator is in the `@Target` specification, which indicates 
 the type of elements to which a particular annotation can be applied. 
 
 
@@ -89,7 +89,6 @@ Annotating the function's return type
 ```
 
 The Java SE 8 version does not provide a type check framework, but it does allows us to write our own custom annotations for the type check. Type-checking frameworks comprises 
-
 of type annotation definitions and plug-ins modules that may be used for annotation processing.
 
 For example, `@NonNull` annotation which comes under Checker Framework, may be applied to a type so that when it is compiled, it is checked not to be `null`.
