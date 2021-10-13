@@ -4,7 +4,7 @@ Annotations in Java are used to provide supplemental information about a program
 
 Type Annotations can be applied to any type use. It ensures stronger type checking which can help reduce the number of errors in the Java code and improved analysis of Java programs.
 
-**Applying Type Annotations** - They can be applied in variety of ways, most often they are placed before the type to which they have been applied.
+**Applying Type Annotations** - They can be applied in many ways, mostly they are placed before the type to which they have been applied.
 
 <br />
 
@@ -67,14 +67,14 @@ Declaration annotations target fields, whereas type annotations target types.
 >public class Main {
 >  public static void main(String[] args) {
 >   
->   // Annotating the type of a string
+>   // Annotation for the string type
 >   @TypeAnnotExample String str = "Annotated with a       
 >                                   Type annotation";
 >         System.out.println(str);
 >         Fun();
 >     }
 >   
->   // Annotation of the function's return type
+>   // Annotation for the function's return type
 >   static @TypeAnnotExample int Fun(){
 >         System.out.println("Function's return type is     
 >                               annotated");
