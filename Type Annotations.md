@@ -59,25 +59,25 @@ Declaration annotations target fields, whereas type annotations target types.
 >import java.lang.annotation.ElementType;
 >import java.lang.annotation.Target;
 > 
->// Using target annotation to annotate a type
+>
 >@Target(ElementType.TYPE_USE)
->// Declaring a simple type annotation
+>
 >@interface TypeAnnotExample{}
 >   
 >public class Main {
 >  public static void main(String[] args) {
 >   
->   // Annotation for the string type
->   @TypeAnnotExample String str = "Annotated with a       
->                                   Type annotation";
+>   
+>   @TypeAnnotExample String str = "Annotating the type of the string";    
+>                                
 >         System.out.println(str);
 >         Fun();
 >     }
 >   
->   // Annotation for the function's return type
+>   
 >   static @TypeAnnotExample int Fun(){
->         System.out.println("Function's return type is     
->                               annotated");
+>         System.out.println("Annotating the function's return type");    
+>                               
 >    return 0;
 >     }
 > }
