@@ -1,6 +1,6 @@
 # Type Annotations In Java
 
-Annotations in Java are used to provide supplemental information about a program. In previous Java versions, annotations can be used only while declarations. Type annotation is a new feature of Java SE 8 along with repeating annotation.
+Annotations in Java are used to provide additional information about a program. In previous Java versions, annotations can be used only while declarations. Type annotation is a new feature of Java SE 8 along with repeating annotation.
 
 Type Annotations can be applied to any type use. It ensures stronger type checking which can help reduce the number of errors in the Java code and improved analysis of Java programs.
 
@@ -37,7 +37,6 @@ Type Annotations can be applied to any type use. It ensures stronger type checki
 The definition of declartion and type annotations is very similar, the key differentiator is in the `@Target` specification, which indicates 
 the type of elements to which a particular annotation can be applied. 
 
-Declaration annotations target fields, whereas type annotations target types. 
 
 **Declaration annotation can include the following meta-annotation :**
 ```
@@ -89,16 +88,18 @@ Annotating the type of the string
 Annotating the function's return type
 ```
 
-The Java SE 8 version does not provide a type check framework, but it allows us to write custom annotations for the type check. Type-checking frameworks comprises of type annotation definitions and pluggable modules that may be used for annotation processing. 
+The Java SE 8 version does not provide a type check framework, but it does allows us to write our own custom annotations for the type check. Type-checking frameworks comprises 
 
-For example, The Checker Framework consist of the `@NonNull` annotation, which may be applied to a type so that when it is compiled, it is checked not to be `null`.
+of type annotation definitions and plug-ins modules that may be used for annotation processing.
+
+For example, `@NonNull` annotation which comes under Checker Framework, may be applied to a type so that when it is compiled, it is checked not to be `null`.
 
 Few more examples of annotations available in the Checker Framework: 
 - `@GuardedBy`: Indicates a type whose value cannot be accessed unless the lock is kept. 
 
-- `@Tainted`: Specifies a type that may include only tainted, untrusted values.
+- `@Tainted`: Specifies a type that may contain values that are not trusted.
 
-- `@Untainted`: Specifies a type that includes only untainted, trusted values.
+- `@Untainted`: Specifies a type that includes only trusted values.
 
 - `@Regex`: Specifies a valid regular statement on strings.
 
